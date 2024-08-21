@@ -21,27 +21,20 @@
     <main class="survey-form">
         <h1>Форма-анкетування</h1>
         <form action="#" method="post">
-            <!-- Поле електронної пошти з перевіркою -->
             <label for="email">Електронна пошта:</label>
             <input type="email" id="email" name="email" required><br><br>
 
-            <!-- Поле логін -->
             <label for="username">Логін:</label>
             <input type="text" id="username" name="username" required><br><br>
 
-            <!-- Поле паролю зі скритими символами -->
             <label for="password">Пароль: <span title="Мінімум 8 символів"></span></label>
             <input type="password" id="password" name="password" minlength="8" required>
             <small>Мінімум 8 символів</small><br><br>
 
 
             
-
-            <!-- Поля розширеного текстового повідомлення -->
             <label for="message">Розширене текстове повідомлення:</label>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-            <!-- Поля з випадним списком -->
             <label for="options">Виберіть варіант:</label>
             <select id="options" name="options" required>
                 <option value="default" selected>Оберіть варіант</option>
@@ -50,7 +43,7 @@
                 <option value="option3">Варіант 3</option>
             </select><br><br>
 
-            <!-- Група перемикачів з підписами -->
+
             <label>Виберіть вашу стать:</label><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Чоловік</label><br>
@@ -59,7 +52,6 @@
             <input type="radio" id="other" name="gender" value="other">
             <label for="other">Mechanic</label><br><br>
 
-            <!-- Група прапорців з підписами -->
             <label>Ваші інтереси:</label><br>
             <input type="checkbox" id="interest1" name="interests" value="coding">
             <label for="interest1">Програмування</label><br>
@@ -68,7 +60,6 @@
             <input type="checkbox" id="interest3" name="interests" value="music">
             <label for="interest3">Музика</label><br><br>
 
-            <!-- Кнопки відправки даних та очищення даних -->
             <button type="submit">Відправити</button>
             <button type="reset">Очистити</button>
         </form>
